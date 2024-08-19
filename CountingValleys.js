@@ -36,18 +36,18 @@ function countingValleys(steps, path) {
     let numValleys = 0;
     let elevation = 0;
     
-    for (let step in path) {
+    for (let step of path) {
         if (step === "D") {
             elevation -= 1;
             if (elevation === -1) {
                 numValleys += 1;
             }
+        }
         else {
             elevation += 1;
         }
-        }
-        return numValleys;
     }
+    return numValleys;
 
 }
 
