@@ -31,6 +31,9 @@ function readLine() {
  *  2. STRING path
  */
 
+// let numValleys: number = 0;
+// let elevation: number = 0;
+
 function countingValleys(steps, path) {
     // Write your code here
     let numValleys = 0;
